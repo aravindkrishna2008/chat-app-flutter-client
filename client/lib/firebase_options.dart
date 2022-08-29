@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,19 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAo_vxsRk3UYXHvjzjLawxWFUeqUmrFVB8',
-    appId: '1:926214246132:web:526779026c1faacbf358a1',
-    messagingSenderId: '926214246132',
-    projectId: 'school-chat-app-f2175',
-    authDomain: 'school-chat-app-f2175.firebaseapp.com',
-    storageBucket: 'school-chat-app-f2175.appspot.com',
-    measurementId: 'G-Z19ZDNP5S9',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAXBdlttLtDldOn7ZvUseSPT4AZU2XARDg',
-    appId: '1:926214246132:android:ecf150203bcde185f358a1',
+    appId: '1:926214246132:android:6cdc6258627ddc99f358a1',
     messagingSenderId: '926214246132',
     projectId: 'school-chat-app-f2175',
     storageBucket: 'school-chat-app-f2175.appspot.com',
@@ -63,17 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDCx7-9Q8HYjIN_4Y83RJ0yfSBsqA1zzXc',
-    appId: '1:926214246132:ios:0f40338d3da1a749f358a1',
-    messagingSenderId: '926214246132',
-    projectId: 'school-chat-app-f2175',
-    storageBucket: 'school-chat-app-f2175.appspot.com',
-    iosClientId: '926214246132-jdpobord1thiq815qtq4vbmfb24d4r5n.apps.googleusercontent.com',
-    iosBundleId: 'com.example.client',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDCx7-9Q8HYjIN_4Y83RJ0yfSBsqA1zzXc',
-    appId: '1:926214246132:ios:0f40338d3da1a749f358a1',
+    appId: '1:926214246132:ios:6394386de6a82a7bf358a1',
     messagingSenderId: '926214246132',
     projectId: 'school-chat-app-f2175',
     storageBucket: 'school-chat-app-f2175.appspot.com',

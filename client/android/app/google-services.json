@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "926214246132",
+    "project_id": "school-chat-app-f2175",
+    "storage_bucket": "school-chat-app-f2175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926214246132:android:ecf150203bcde185f358a1",
+        "android_client_info": {
+          "package_name": "com.example.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926214246132-ql79976htg63oo25c27g0u7m1tid2s4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXBdlttLtDldOn7ZvUseSPT4AZU2XARDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926214246132-ql79976htg63oo25c27g0u7m1tid2s4l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "926214246132-gp8vbobnu6dg7qcusjklmuqvs64h1omg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.flutter.plugins.pathProviderExample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
